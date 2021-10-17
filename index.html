@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+  </head>
+  <body>
+    <main>
+ 
+      <div id="QuizBody">
+        <div class="heading">
+          <h1>Code Quiz</h1>
+        </div>
+        <button id="start">Start Quiz</button>
+        <div>
+          <p1 id="quiz">Qlick on "Start Quiz" btn to start</p1>
+        </div>
+        <div class="options-container">
+          <button class="button" id="btn0">
+            Option a <span id="choice0"></span>
+          </button>
+          <button class="button" id="btn1">
+            Option a<span id="choice1"></span>
+          </button>
+          <button class="button" id="btn2">
+            Option a<span id="choice2"></span>
+          </button>
+          <button class="button" id="btn3">
+            Option a<span id="choice3"></span>
+          </button>
+        </div>
+        <div id="answer"></div>
+        <div id="waiting_time">
+          <p>Quiz Timer</p>
+        </div>
+    </div>
+    <div id="results">
+        <h2>All Done!</h2>
+        <p id="counter"> Your final score is</p>
+        <label for="name" id= "gameResults">Enter your Name:</label>
+        <input type="name" id="name" name="name">
+        <button class = "button" id = "submit">Submit</button>
+    </div>
+    <div id="final-results">
+      <h4 id="show-results">Here are your final results</h4>
+      <button class="button" id = "play-again">Try Again</button> 
+    </div>
+      </div>
+ 
+    </main>
+    <script src="Assets/javascript.js"></script>
+  </body>
+</html>

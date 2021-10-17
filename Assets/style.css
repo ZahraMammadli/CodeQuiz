@@ -1,0 +1,89 @@
+:root {
+  --pagecolor: #f5f4f0;
+  --headercolor: rgb(73, 72, 72);
+  --fontf: "graphik";
+  --asidecolors: rgb(138, 61, 138);
+  --hovercolor: #d8e2dc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  font-family: var(--fontf);
+  color: var(--headercolor);
+}
+
+#QuizBody {
+  display: inline;
+}
+#start {
+  background-color: green;
+  margin-left: 18px;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+}
+
+#quiz {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 30%;
+  font-weight: bold;
+  font-size: 30px;
+  flex: 1, 1, 45%;
+}
+
+#results {
+  display: flex;
+  display: none;
+  font-family: var(--fontf);
+  font-weight: bold;
+  font-size: 20px;
+}
+#results h2 {
+  color: green;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.options-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 50%;
+  flex-direction: column;
+  flex: 1, 1, 25%;
+}
+
+.button {
+  background-color: var(--asidecolors);
+  opacity: 1;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+#waiting_time p {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#final-results {
+  display: none;
+}
